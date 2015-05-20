@@ -6,11 +6,19 @@ In order to create a module, we call the `module` function of the `angular` obje
 When we create a new module by calling the `module` function, we specify a name for the module as the first parameter, and an array of dependencies for the second parameter.
 
 In the following code, we specify `ourApp` as the name for the module, and an empty array for the dependencies.
+This is also known as Module Setter Syntax:
 
 ####Creating our module
     var app = angular.module('ourApp', []);
 
 You don't strictly need to assign it to a variable, a lot of developers don't. It's just done this way to make the code easier to follow during this course.
+
+To retrieve a module at a later time you can use the getter Syntax:
+
+#### Getting our module
+    angular.module('ourApp');
+    
+As you can see the only difference lies in the arguments array at the end.
 
 Try out the syntax for yourself.
 
